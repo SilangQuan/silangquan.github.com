@@ -19,7 +19,7 @@ author :
 
 encoding: utf-8
 baseurl: /
-paginate: 5
+paginate: 4
 paginate_path: "page:num"
 
 # The production_url is only used when full-domain names are needed
