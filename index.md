@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: 我叫拳四郎
 tagline: Supporting tagline
 ---
