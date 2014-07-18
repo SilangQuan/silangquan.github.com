@@ -1,20 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <link rel="stylesheet" type="text/css"  href="/assets/themes/silangquan/css/default.css">
     <meta name="author" content="{{ site.author.name }}">
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   </head>
 
   <body>
+  	<div id = "container">
+
+  		<div id = "header">
+  			<a class = "brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+  			<a class = "slogon" href="{{ HOME_PATH }}">这就是我对待梦想的态度</a>
+          	<ul class="nav">
+            	<li><a href="/archive.html">文章</a></li>
+            	<li><a href="/categories.html">分类</a></li>
+            	<li><a href="/works.html">作品</a></li>
+            	<li><a href="/Equipments.html">装备</a></li>
+            	<li><a href="/Links.html">链接</a></li>
+          	</ul>
+  			</div>
+
+  		<div id = "main">
+  		</div>
+
+  		<div id = "footer">
+  		<div id = "copyright">Copyright 2014-2016. All rights reserved.</div>
+  		<div id = "power"> Powered by Jekyll a theme by SIlangQuan.</div>
+  	</div>
+  	</div>
+
+  	
+
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-narrow">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+
           <ul class="nav">
             <li><a href="/archive.html">文章</a></li>
             <li><a href="/categories.html">分类</a></li>
