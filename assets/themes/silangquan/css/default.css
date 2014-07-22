@@ -1,0 +1,146 @@
+body{
+  background-color: #344b5e;
+  font-size:14px;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+.link a{
+  color:#FFF;
+  text-decoration:none;
+  font-weight:400;
+  margin-left:20px;
+}
+a{
+  color:#000;
+  text-decoration:none;
+  }
+
+a:visited{
+  text-decoration:none;
+  }
+
+#container{
+  margin:0px auto;
+  min-width: 780px;
+  max-width: 1260px;
+  margin-top: 50px;
+  text-align:left;
+  border:0px solid;
+  background:#FFF;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  }
+
+#header{
+  height:96px;
+  }
+
+#header .brand{
+  font-size:44px;
+  float:left;
+  margin-top:43px;
+  margin-left:10px;
+}
+#header .slogon{
+  float:left;
+  font-size:18px;
+  margin-top:70px;
+  margin-left:20px;
+  color:#a6a6a6
+}
+#header ul a{
+    color: #6d6d6d
+}
+#header ul a:hover{
+  color:#0080FF;
+}
+
+#header ul {
+  font-size:22px;
+  margin-right:20px;
+  margin-top:65px;
+  float:right;
+
+
+  }
+#header ul li {
+  display:block;
+  list-style:none;
+  margin-left: 20px;
+  float:left;
+}
+
+#banner{
+  padding-top: 2px;
+  clear:both;
+  height: 224px;
+  background-color: #F3F3F3;
+  padding-bottom: 2px;
+}
+#footer{
+  clear:both;
+  height:92px;
+  background-color: #222;
+}
+
+#main {
+  height:1423px;
+  float:left;
+  background-color: #333;
+}
+
+#main #bloglist{
+  float:left;
+  width:1030px;
+  height:1423px;
+  background-color: #FFFFFF;
+}
+
+#main #misc{
+  float:left;
+  width:220px;
+  height:1423px;
+  background-color: #FFFFFF;
+}
+
+#misc #portrait{
+  margin-left: 40px;
+  margin-top: 5px;
+}
+
+#search_box{
+  padding-left: 10px;
+  margin-top: 20px;
+  width: 210px;
+  background-color: #598db4;
+  float: left;
+}
+
+#search_box input{
+  background-color: #598db4;
+  height: 26px;
+  border: 0px;
+  float: left;
+  color: #9EC2DF;
+}
+
+#search_box img{
+  margin-right: 10px;
+  margin-top: 4px;
+  float: right;
+}
+
+#socials{
+  float: left;
+}
+
+#socials img{
+  float: left;
+  margin-left: 8px;
+}
+

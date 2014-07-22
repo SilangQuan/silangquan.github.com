@@ -1,13 +1,13 @@
 ---
-layout: post
+layout: default
 title: 拳四郎の世界
 tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
-
-{% for post in site.posts limit:2 %}
-<div class="post">	
+<div class="post">
+{% for post in site.posts limit:5 %}
+	
 		<time datetime = "{ post.date | date_to_string }" class="post_date">
 			<span class="post_month">{{post.date|date:"%B"}}</span>
 			<strong class = "post_day">{{post.date|date:"%d"}}</strong>
@@ -16,16 +16,12 @@ tagline: Supporting tagline
 
 	<div class="post_title_tag">
 		<h2><a class="post_title" href="{{post.url}}">{{post.title}}</a></h2>
-		<span class="post_tag"><img  class="post_tag_image" height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>{{ post.tags | array_to_sentence_string }}</span>
+		<span class="post_tag"><img height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>{{ post.tags | array_to_sentence_string }}</span>
 	</div>
 
-	{% if post.content contains '<!--more-->' %}
-    	<div class="post_content"> {{ post.content | split:'<!--more-->' | first }}</div>
-	{% else %}
-   	 	<div class="post_content">{{ post.content}} </div>
-	{% endif %}
-
+	<div class="post_content">{{post.content}}</div>
 </div>
+<div class="post">
 {% endfor %} 
 
 

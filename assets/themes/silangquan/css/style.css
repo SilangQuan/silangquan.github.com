@@ -1,0 +1,163 @@
+
+.post_date{
+width: 45px;
+height: auto;
+float: left;
+text-align: center;
+margin-right: 20px;
+margin-bottom: 15px;
+display: block;
+background: #9dcedf;
+text-shadow: 0px 1px #81bcd1;
+border-radius: 80px;
+-moz-border-radius: 80px;
+-webkit-border-radius: 80px;
+padding: 10px 30px;
+color: #fff;
+}
+
+.post_day {
+font-size: 36px;
+margin: 5px 0 5px 0;
+}
+.post_day, .post_year {
+display: block;
+}
+
+.post{
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 1000px;
+  float: left;
+}
+
+
+.post_title{
+  margin-top: 30px;
+  float: left;
+  font-size: 33px;
+}
+
+.post_tag{
+  margin-top: 8px;
+  float: left;
+}
+
+.post_tag_image{
+  float: left;
+  margin-right: 3px;
+  margin-top: 2px;
+}
+
+.post_title_tag{
+  float: left;
+  height: 100px;
+}
+
+.post_content{
+  float: left;
+  font-size: 16px;
+  padding: 20px;
+  width: 960px;
+}
+
+.post_content_image{
+  width: 920px;
+  margin: 20px auto;
+  clear: both;
+}
+
+
+.post_content h1, h2, h3, h4 {
+    color: #111111;
+    font-weight: 400;
+}
+.post_content h1, h2, h3, h4, h5, p {
+    margin-bottom: 24px;
+    padding: 0;
+}
+.post_content h1 {
+    font-size: 48px;
+}
+.post_content h2 {
+    font-size: 36px;
+    /* The bottom margin is small. It's designed to be used with gray meta text
+     * below a post title. */
+    margin: 24px 0 6px;
+}
+.post_content h3 {
+    font-size: 24px;
+}
+.post_content h4 {
+    font-size: 21px;
+}
+.post_content h5 {
+    font-size: 18px;
+}
+.post_content a {
+    color: #0099ff;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+.post_content a:hover {
+    text-decoration: none;
+    color: #ff6600;
+}
+.post_content a:visited {
+    color: purple;
+}
+.post_content ul, ol {
+    padding: 0;
+    margin: 0;
+}
+.post_content li {
+    line-height: 24px;
+}
+.post_content li ul, li ul {
+    margin-left: 24px;
+}
+.post_content p, ul, ol {
+    font-size: 16px;
+    line-height: 24px;
+}
+.post_content pre {
+    padding: 0px 24px;
+    white-space: pre-wrap;
+}
+.post_content code {
+    font-family: Consolas, Monaco, Andale Mono, monospace;
+    line-height: 1.5;
+    font-size: 13px;
+}
+.post_content aside {
+    display: block;
+    float: right;
+    width: 390px;
+}
+.post_content blockquote {
+    border-left:.5em solid #eee;
+    padding: 0 2em;
+    margin-left:0;
+}
+.post_content blockquote  cite {
+    font-size:14px;
+    line-height:20px;
+    color:#bfbfbf;
+}
+.post_content blockquote cite:before {
+    content: '\2014 \00A0';
+}
+
+.post_content blockquote p {  
+    color: #666;
+}
+.post_content hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid rgba(102,128,153,.15);
+  line-height: 1.6
+}
+
+
