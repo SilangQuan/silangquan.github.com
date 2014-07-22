@@ -1,0 +1,13 @@
+---
+layout: post
+title: "你好，世界2"
+description: ""
+category: 
+tags: [tag1,tag2,tag3]
+---
+{% include JB/setup %}
+
+<center><img class="post_content_image" src="/assets/themes/silangquan/images/banner.jpg" alt = "Banner pic"/></center><br>
+ <!--break-->
+cdasd
+
