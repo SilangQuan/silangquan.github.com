@@ -42,11 +42,18 @@
           </div>
 
           <div id="search_box" action="" method="get"> 
-            
-            <input name="" type="text" class="input_box" value="Seaching..." size=16/> 
+            <input name="" type="text" class="input_box" value="Seaching..." size=9/> 
             <img  src="/assets/themes/silangquan/images/search.png" alt = "Search" height="18px"/> 
-            
           </div> 
+
+          <div id="categories">
+            <div id="categories_title">CATEGORIES</div>
+              <ul>
+                {% for category in site.categories %}
+                 <li>{{ category | first }} ({{ category | last | size }})
+                {% endfor %}
+              </ul>
+          </div>
 
         </div>
   		</div>
@@ -55,9 +62,11 @@
   	</div>
 
     <div id = "footer">
-      <div id = "copyright"><center>Copyright 2014-2016. All rights reserved.</center></div>
-      <div id = "power"> <center>Powered by Jekyll a theme by SIlangQuan.</center></div>
+      <div id = "copyright"><center>Copyright&copy2014-2016. All rights reserved.</center></div>
+      <div id = "power"> <center>Powered by Jekyll a theme by SilangQuan.</center></div>
     </div>
+
+
 
   	
 
