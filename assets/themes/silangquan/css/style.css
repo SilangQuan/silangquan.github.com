@@ -26,7 +26,7 @@ display: block;
 
 .post{
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 40px;
   width: 1000px;
   float: left;
 }
@@ -34,12 +34,10 @@ display: block;
 
 .post_title{
   margin-top: 30px;
-  float: left;
   font-size: 33px;
 }
 
 .post_tag{
-  margin-top: 8px;
   float: left;
 }
 
@@ -50,20 +48,21 @@ display: block;
 }
 
 .post_title_tag{
+  padding-top: 20px;
   float: left;
   height: 100px;
 }
 
 .post_content{
   float: left;
-  font-size: 16px;
-  padding: 20px;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 20px 0;
   width: 960px;
 }
 
 .post_content_image{
   width: 920px;
-  margin: 20px auto;
   clear: both;
 }
 
@@ -73,7 +72,7 @@ display: block;
     font-weight: 400;
 }
 .post_content h1, h2, h3, h4, h5, p {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     padding: 0;
 }
 .post_content h1 {
@@ -116,10 +115,6 @@ display: block;
 }
 .post_content li ul, li ul {
     margin-left: 24px;
-}
-.post_content p, ul, ol {
-    font-size: 16px;
-    line-height: 24px;
 }
 .post_content pre {
     padding: 0px 24px;

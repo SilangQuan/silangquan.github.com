@@ -6,7 +6,7 @@ tagline: Supporting tagline
 {% include JB/setup %}
 
 
-{% for post in site.posts limit:2 %}
+{% for post in site.posts limit:3 %}
 <div class="post">	
 		<time datetime = "{ post.date | date_to_string }" class="post_date">
 			<span class="post_month">{{post.date|date:"%B"}}</span>

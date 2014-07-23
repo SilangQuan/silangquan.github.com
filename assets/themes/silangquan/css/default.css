@@ -1,6 +1,6 @@
 body{
   background-color: #344b5e;
-  font-size:14px;
+  font-size:15px;
 }
 
 * {
@@ -34,6 +34,7 @@ a:visited{
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
+  min-height:800px;
   }
 
 #header{
@@ -41,15 +42,15 @@ a:visited{
   }
 
 #header .brand{
-  font-size:44px;
+  font-size:34px;
   float:left;
-  margin-top:43px;
-  margin-left:10px;
+  margin-top:48px;
+  margin-left:40px;
 }
 #header .slogon{
   float:left;
-  font-size:18px;
-  margin-top:70px;
+  font-size:16px;
+  margin-top:65px;
   margin-left:20px;
   color:#a6a6a6
 }
@@ -61,8 +62,8 @@ a:visited{
 }
 
 #header ul {
-  font-size:22px;
-  margin-right:20px;
+  font-size:16px;
+  margin-right:60px;
   margin-top:65px;
   float:right;
 
@@ -83,40 +84,37 @@ a:visited{
   padding-bottom: 2px;
 }
 #footer{
+  margin: 10px auto;
+  color: #fff;
   clear:both;
   height:92px;
-  background-color: #222;
 }
 
 #main {
-  height:1423px;
   float:left;
-  background-color: #333;
 }
 
 #main #bloglist{
   float:left;
   width:1030px;
-  height:1423px;
-  background-color: #FFFFFF;
 }
 
 #main #misc{
   float:left;
-  width:220px;
-  height:1423px;
+  width:180px;
+  min-height:823px;
   background-color: #FFFFFF;
 }
 
 #misc #portrait{
-  margin-left: 40px;
+  margin-left: 10px;
   margin-top: 5px;
 }
 
 #search_box{
   padding-left: 10px;
   margin-top: 20px;
-  width: 210px;
+  width: 180px;
   background-color: #598db4;
   float: left;
 }
@@ -144,3 +142,6 @@ a:visited{
   margin-left: 8px;
 }
 
+.clear{
+  clear: both;
+}
