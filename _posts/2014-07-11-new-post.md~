@@ -1,8 +1,0 @@
----
-layout: post
-title: "你好，世界"
-description: "First blog."
-category: 
-tags: [tag1,tag2,tag3]
----
-{% include JB/setup %}
