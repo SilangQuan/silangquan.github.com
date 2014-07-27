@@ -76,9 +76,7 @@ display: block;
     margin-bottom: 15px;
     padding: 0;
 }
-.post_content h1 {
-    font-size: 48px;
-}
+
 .post_content h2 {
     font-size: 36px;
     /* The bottom margin is small. It's designed to be used with gray meta text
