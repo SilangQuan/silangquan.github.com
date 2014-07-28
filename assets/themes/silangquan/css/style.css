@@ -67,6 +67,10 @@ display: block;
   clear: both;
 }
 
+h1 {
+margin: 50px 0 20px;
+font-size: 30px;
+}
 
 .post_content h1, h2, h3, h4 {
     color: #111111;
@@ -154,4 +158,12 @@ display: block;
   line-height: 1.6
 }
 
+.post_content img{
+  margin-bottom: 20px;
+  clear: both;
+}
+
+#equid_wlist{
+  margin-left: 40px;
+}
 
