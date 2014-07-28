@@ -16,7 +16,7 @@ email : silangquan@gmail.com
 github : username
 twitter : username
 feedburner : feedname
-markdown: kramdown
+markdown: redcarpet
 
 encoding: utf-8
 baseurl: /
