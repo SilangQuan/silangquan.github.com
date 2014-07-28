@@ -11,11 +11,12 @@ pygments: true
 title : 拳四郎の世界
 tagline: 这就是我对待梦想的态度
 author :
-  name : 拳四郎
-  email : silangquan@gmail.com
-  github : username
-  twitter : username
-  feedburner : feedname
+name : 拳四郎
+email : silangquan@gmail.com
+github : username
+twitter : username
+feedburner : feedname
+markdown: kramdown
 
 encoding: utf-8
 baseurl: /
