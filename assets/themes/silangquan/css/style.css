@@ -115,6 +115,7 @@ font-size: 30px;
 }
 .post_content li {
     line-height: 24px;
+    margin-left: 20px;
 }
 .post_content li ul, li ul {
     margin-left: 24px;

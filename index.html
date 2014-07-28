@@ -16,7 +16,8 @@ tagline: Supporting tagline
 
 	<div class="post_title_tag">
 		<h2><a class="post_title" href="{{post.url}}">{{post.title}}</a></h2>
-		<span class="post_tag"><img  class="post_tag_image" height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>{{ post.tags | array_to_sentence_string }}</span>
+		<span class="post_tag"><img  class="post_tag_image" height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>
+			{% for tag in post.tags %}<span>{{tag}}&nbsp; </span>{% endfor %}</span>
 	</div>
 
 	{% if post.content contains '<!--more-->' %}

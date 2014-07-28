@@ -8,8 +8,9 @@
 
 <div class="post_title_tag">
     <h2><a class="post_title" href="{{post.url}}">{{page.title}}</a></h2>
-    <span class="post_tag"><img  class="post_tag_image" height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>{{ page.tags | array_to_sentence_string }}</span>
-  </div>
+    <span class="post_tag"><img  class="post_tag_image" height="18px" src="/assets/themes/silangquan/images/mark.png" alt="tag"/>
+      {% for tag in page.tags %}<span>{{tag}}&nbsp; </span>{% endfor %}</span>
+</div>
 
 <div class="row-fluid post-full">
   <div class="span12">
