@@ -1,0 +1,209 @@
+---
+layout: post
+title: "Jekyll简介"
+description: ""
+category: 技术
+tags: [Jeklly,翻译]
+---
+<center><img src="/assets/post_images/20140725/1.jpg" alt="github+jekyll"></center>
+#Jekyll简介
+
+##什么是Jekyll
+Jekyll是一个ruby的gem包，同时它是一个解析引擎，可以将templates,partials,liquid代码，markdown等 解析成静态网站页面。被成为“博客和静态网站的发电机”。
+[Jekyll示例网站](https://github.com/jekyll/jekyll/wiki/Sites)
+
+---
+##Jekyll不是博客软件
+**Jekyll是解析引擎**
+jekyll不会产生任何内容或者做一些模板和设计的元素，这对于初次接触的同学往往会产生混乱，事实上jekyll没有做出任何你在网站上看到的东西，一切东西都是你自己做出来的。
+
+##我关心个锤子？
+jekyll非常的小巧精致，并且高效。最重要的是你要明白jekyll帮你创建了一个静态的仓库，从而你只是需要一个静态的web服务器就可以了。传统的动态博客， 比如Wordpress需要一个数据库并且需要编写服务端的代码。那些笨重的动态博客还需要一些缓冲层，而最终也就是完成了和jekyll的相同功能。而jekyll不需要这些， 它仅仅帮你提供那些内容。
+
+因此，如果你喜欢让事情变得简单，你喜欢使用命令行来管理面板UI，那么你旧尝试一下jekyll带来的快乐吧。
+
+**开发者们喜欢使用jekyll，因为我们使用jekyll写博客可以像在编程一样。**
+
+> * 你可以用你喜欢的文本编辑器使用markdown语法或者textfile语法写你的博客
+> * 你可以在你的本地编写并且预览你的博客
+> * 你可以在没有网络情况下照样工作
+> * 你可以使用git版本控制工具来管理你写的东西
+> * 你可以将你写的博客搭建到一个静态web服务器
+> * 你可以将你的博客免费的搭建在github主页上
+> * 你不需要使用数据库
+
+
+#Jekyll如何工作
+>举起手来！下面的内容是一个Jekyll工作方式的简单概要，核心的东西都有介绍，并且也有示例代码片段。这并不是要教你了解Jekyll的一切，只是让你有一个Jekyll世界的大局观。学习这些核心的概念能够帮助你避免各种坑，最终也能帮助你看懂Jekyll-Bootstrap中的示例代码。
+
+##初始化
+在[安装完Jekyll](http://jekyllrb.com/docs/installation/)之后，你需要用Jekyll的方式格式化你的网站目录。Jekyll-bootstrap已经很方便地提供了基本的目录格式。
+
+###Jekyll应用的基本格式
+Jekyll所期望的网站目录应该像下面这样：
+*_config.yml* 存储配置信息
+*_includes* 用于partial views
+*_layouts* 主要的模板，你的内容将会被安插进去。对于不同的页面或者页面上的某个部分，你可以使用不同的layout。
+*_posts* 包含你的动态的内容/文章。命名的规则是@YEAR-MONTH-DATE-title.MARKUP@.
+*_site* 当Jekyll将博客解析完成之后，整个网站就会传送到这里。
+*asset* 这个目录不是标准的Jekyll结构所必须的，assets目录表示你想要创建的任何你像放在根目录下的文件。目录和文件如果不是很好地组织号的话，Jekylly将不会正常的工作。
+（更多内容请参考：[http://jekyllrb.com/docs/usage/](http://jekyllrb.com/docs/usage)）
+
+###Jekyll配置
+Jekyll支持很多的配置选项，参考这里：[http://jekyllrb.com/docs/configuration/](http://jekyllrb.com/docs/configuration/)
+
+---
+##Jekyll的内容
+Jekyll的内容不是什么页面或者一篇博客。内容对象会对应插入到一个或者多个模板中，最终生成对应的静态页面。
+
+###文章和页面（Posts and Pages）
+所有的文章和页面都应当用markdowm，textile或者HTML编写，也可以包含一些Liquid模板语法。文章和页面都可以拥有meta-data，任意的自定义的meta-data也可以。
+
+###关于Posts
+**创建Post**
+在_posts文件夹里面放入命名好的文件就可以创建文章了。
+**格式化**
+一篇post必须有一个`YEAR-MONTH-DATE-title.MARKUP`这样格式名字，并且放在`_posts`文件夹。如果文件名不对就不会被Jekyll识别，post的文件名和日期id偶会都会直接从文件名直接识别。另外，每一个文件必须在里面添加[YAML Front-Matter](http://jekyllrb.com/docs/frontmatter/)，YAML Front-Matter是一个YAML的语法标识。
+**排序**
+排序是Jekyll中很重要的一个部分，但是很难去设定一个自定义的排序方式，所以现在只支持顺序和逆序排序。
+因为文件名是写死的，所以如果要改变文章的顺序，必须改变文件名。
+**标签**
+文章可以用有关联的tag，作为自身meta data的一部分。标签可以放在文章的YAML 的 front matter中。你可以访问模板中指定的标签，这些标签也被添加到整个站点的集合。
+**分类**
+文章可以通过在YAML front matter中提供一个或者多个类别来进行分类。相比于标签，分类则更加有意义，它定义了URL和文章之间的映射关系。Jekyll的文章分类工作方式有一点点与众不同。如果你定义了了不止一种分类，你定义的就是一个层级关系的集合，比如：
+
+这定义了分类层级“Lessons/beginner”，记住这只是Jekyll的一个层级节点，你不会发现Lessons和beginner这两个单独的节点，除非你在其他地方单独定义了他们。
+
+###关于Pages
+**创建一个页面**
+格式化号一个文件，将它放在根目录或者不以下划线开始的文件夹中就可以创建页面了。
+
+**格式化**
+为了注册一个Jeklly的页面，文件必须包含YAML Front-Matter。注册一个页面表示：1）Jekyll将会处理这个页面 2）这个页面将会出现在`site.pages`列表中。
+
+**分类和标签**
+页面没有分类或者标签，所以定义了也没有用。
+
+**子文件夹**
+如果页面放在子文件夹下面，页面的路径也会反映在url上，比如：
+
+那么这个页面的url将会是
+`http://yourdomain.com/people/bob/essay.html`
+
+**推荐的页面**
+
+- index.html
+根URL所对应的页面。
+- 404.html
+创建一个专有404页面，GitHubPages将会将它作为你的404页面。
+- sitemap.html
+生成一个sitemap对SEO将会有大大的好处.
+- about.html
+一个漂亮的关于页面将会给人一个关于你的网站的大概印象。
+
+---
+##Jekyll模板
+模板是用来包含页面或者文章内容的。所有的模板都可以访问全局的网站对象：`site`，还有页面对象：`page`。site变量保存了网站相关的所有可访问的内容和meta data。page变量保存了所有当前页面或者文章的的所有可访问的数据。
+
+**创建一个模板**
+模板可以通过创建一个格式化好的文件，并把它放在`_layouts`文件夹中来创建。
+
+**格式化**
+模板应当用HTML编写，并且包含 YAML Front Matter。所有模板都可以包含Liquid code来处理网站的数据。
+
+**在模板中渲染页面/文章内容**
+所有模板中都有一个特殊的变量 `content`。`content`变量包含了所有页面/文章的内容。也包含了任何子模板中的内容。可以通过插入content变量来在任意你想的地方来渲染内容：
+
+**子模板**
+子模板和模板一样，唯一的不同就是它们定义在另外的目录中（layout/template），它们也必须有YAML Front Matter。 这意味着这些模板只能在另外的模板中渲染。
+
+**包含**
+在Jekyll中你可以定义一些头文件，将它们放在`_includes`文件夹中。Include文件并不是模板，它们只是一些小的代码片段，可以包含在其他的模板里面。这样，你就可以把这些代码当作父模板所单独拥有。
+任何可用的的模板代码都可以在includes文件夹中使用。
+
+---
+##在模板中使用Liquid
+模板也许是Jekyll中最让人蛋疼和沮丧的东西了。这主要是因为Jekyll模板必须使用Liquid模板语言。
+
+###什么是Liquid
+Liquid是由Shopify开发的安全模板语言，Liquid是给端终用户使用的处理模板逻辑的语言，同时不会给服务端带来任何风险。
+Jekyll使用Liquid配合页面的布局结构来生成文章内容，这也是你操作你的网站文章和页面的主要方式。
+
+###为什么我们要使用Liquid？
+GitHub使用Jekylly助力GitHub Pages.GitHub不允许其他人在它的服务器上乱来，所以开发者只能呢根选择Liquid。
+
+###Liquid不是程序员友好的
+真相是Liquid并不是真正的代码，并且它也不打算执行任何代码。你只能做Liquid明显声明号的内容，还有，你只能访问那些被显式传给模板的数据结构。
+
+在Jekyll中，无法使用自定义的插件之类的，这些GitHub Pages都不支持。
+
+作为一个程序员，这真实太蛋疼了。
+不过我们也不要太吹毛求疵了（ look a gift horse in the mouth），我们要乐观一点，它虽然有一些限制，但是这也是一个很好的解决方案。
+
+我个人的建议就是不要花太多的时间来hack lliquid，从一个程序员的观点来看，这确实不太需要，你如果有能力去使用一些自定义的插件，你还是最好选择[http://ruhoh.com](http://ruhoh.com)。
+
+---
+##静态资源
+静态assets就是所有放在根目录中或者不以下划线开头的文件夹中的非页面的文件。它们没有正确的YAML Front Matter，所以它们没有被是为Jekyll页面，静态资源可以是image，css和javascript文件。
+
+---
+##Jekyll怎样解析文件
+记住Jekyll是一个处理引擎。在Jekyll中有两种主要的解析方式。
+
+ - 内容解析
+这个由textile或者markdown来完成.
+ - 内容解析
+这个由liquid 模板语言来完成。
+
+因此主要有两种类型的文件需要解析。
+
+- 文章和页面文件
+所有在Jekyll的内容要么是文章，要么是页面，所以有效的文章或者页面都会被markdown或者textile解析。
+
+- 模板文件
+这些文件在_layouts文件夹中，包含了博客的模板。它们应当由HTML语言编写并且有一些LIquid的语句，因为include文件只是简单地被引用在模板中，它们就像单独的给模板使用。
+
+###任意的文件和文件夹
+没有被Jekyll识别的文件将会倍当成静态资源处理，不会对其进行处理，让它驻留在博客。
+
+###格式化需要解析的文件
+我们之前已经提到国，正确的格式化文件需要使用**YAML Front Matter**。模板，文章和页面都需要提供有效的YAML Front Matter，即使是Matter是空的也要提供。这是告诉Jekyll怎样处理文件的唯一方法。
+
+YAML Front Matter 必须添加在模板/文章/页面的顶部：
+
+三个短横表示开始，最后三个短横表示结束。中间的内容必须是有效的YAML。
+YAML Front-Matter的参数很明了：一个通俗易懂的的YAML Front-Matter。
+定义文章和模板的解析的层。
+layout参数定义了给定 文章或者模板应当被解析的层。如果一个模板文件声明了layout参数，那么它就是一个子模板。这也就是说可以在一个模板中引用另一个模板是ok的。
+
+---
+##Jekyll是怎样生成最终的静态文件的
+最后，Jekyll的任务是生成一些你网站的静态文件，下面就是Jekyll是怎样做的。
+**1.Jekyll收集数据**
+Jekyll扫描文章目录并且手机所有文章作为文章对象。然后扫描layout assets并且收集起来，并且最终搜索其他目录的页面。
+**2.Jekyll计算数据**
+Jeklly使用这些对象，从中计算metadata（链接，标签，目录，标题，数据），并且计算组成一个大的站点，里面包含了所有的文章，页面，布局和各自的metadata。在这个阶段，你的站点是一个计算号的ruby对象。
+**3.Jekyll liquifies 文章和模板**
+下面jekyll递归遍历每个文并将它们转化，并且用Liquid转换对应的layout里面的文章，一旦文章被解析了，并且被放到对应的 layout结构中，那么这个layout就是“liquified”。
+Liquification被定义如下：Jekyll初始化一个Liquid模板，然后传递一个ruby站点对象的简单的哈希表示，作为一个ruby站点对象的简单的哈希表示。（passes a simpler hash representation of the ruby site object as well as a simpler hash representation of the ruby post object.不会翻，懂ruby的同学帮下忙） 这些简化了的数据结构就是你需要访问的模板数据。
+
+**4.Jekyll 生成最终文件**
+最后liquid 模板就会被“渲染”，处理模板中的liquid 语句并保存最终的静态结果。
+
+**记住**
+因为Jekyll计需要一次性（in one fell swoop）生成了整个网站，每个模板都可以通过全局的site哈希来访问。
+记住，在Jekyll中你是一个终端用户，你的API只有两个部分：
+1.你构建目录的方法。
+2.传给Liquid模板的liquid语法和变量。
+
+所有模板中可访问的对象数据在Jekyll-Bootstrap的**API Section**都有说明，你可以看看原始的文档：[http://jekyllrb.com/docs/variables/](http://jekyllrb.com/docs/variables/)
+
+---
+
+##总结
+我希望上面的文字说清楚了Jekyll做了什么和为什它要那样做。就像上面说到的，我们主要的编程限制就是Liquid给我们带来的限制。
+Jekyll-boosstrap的目的是为了提供使用Jekyll更好的方法，让他更加直观和简单。
+**谢谢**观赏。
+
+原文链接：[http://jekyllbootstrap.com/lessons/jekyll-introduction.html](http://jekyllbootstrap.com/lessons/jekyll-introduction.html)
+
