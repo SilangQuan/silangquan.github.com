@@ -57,7 +57,6 @@ display: block;
   float: left;
   font-size: 15px;
   line-height: 1.5;
-  padding: 20px 0;
   width: 960px;
   color: #575859;
 }
@@ -97,18 +96,12 @@ font-size: 30px;
     font-size: 18px;
 }
 .post_content a {
-    color: #0099ff;
+    color: #58a8ec;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
 }
-.post_content a:hover {
-    text-decoration: none;
-    color: #ff6600;
-}
-.post_content a:visited {
-    color: purple;
-}
+
 .post_content ul, ol {
     padding: 0;
     margin: 0;
@@ -129,6 +122,20 @@ font-size: 30px;
     line-height: 1.5;
     font-size: 13px;
 }
+
+.read_all{
+  float: left;
+  font-size: 14px;
+
+  width: 100%;
+    border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 10px;
+}
+
+.read_all:hover{
+  color:#507ba0;
+}
+
 .post_content aside {
     display: block;
     float: right;
@@ -164,7 +171,50 @@ font-size: 30px;
   clear: both;
 }
 
+
+
+.pagination{
+  margin-top: 10px;
+}
+
+.pagination li{
+  list-style-type: none;
+}
+
+
+#disqus_thread{
+  width: 960px;
+  float: left;
+}
+
 #equid_wlist{
   margin-left: 40px;
 }
 
+.table-striped-white tbody>tr:nth-child(2n+1)>td, .table-striped-white tbody>tr:nth-child(2n+1)>th {
+  background-color: rgba(102,128,153,.05);
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #ddd;
+  border-collapse:collapse; 
+}
+
+.table, .table th, .table td {
+  padding: 8px 20px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  border-collapse:collapse; 
+}
+
+.table{
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+td, th {
+display: table-cell;
+vertical-align: inherit;
+}

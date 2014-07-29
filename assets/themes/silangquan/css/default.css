@@ -1,6 +1,16 @@
 body{
   background-color: #344b5e;
   font-size:15px;
+  font-family:'WenQuanYi Micro Hei','微软雅黑','黑体','宋体'
+}
+
+@font-face {
+font-family:微软雅黑;
+src: url('微软雅黑.eot'); /* IE9 Compat Modes */
+src: url('微软雅黑.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+url('微软雅黑.woff') format('woff'), /* Modern Browsers */
+url('微软雅黑.ttf') format('truetype'), /* Safari, Android, iOS */
+url('微软雅黑.svg#微软雅黑') format('svg'); /* Legacy iOS */
 }
 
 * {

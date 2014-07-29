@@ -21,10 +21,15 @@ tagline: Supporting tagline
 	</div>
 
 	{% if post.content contains '<!--more-->' %}
-    	<div class="post_content"> {{ post.content | split:'<!--more-->' | first }}</div>
+    	<div class="post_content"> {{ post.content | split:'<!--more-->' | first }}
+    		<a class="read_all"  href="{{post.url}}">阅读全文&nbsp"{{post.title}}"</a>
+    	</div>
 	{% else %}
-   	 	<div class="post_content">{{ post.content}} </div>
+   	 	<div class="post_content">{{ post.content}}
+   	 	</div>
 	{% endif %}
+
+	
 
 </div>
 {% endfor %} 
