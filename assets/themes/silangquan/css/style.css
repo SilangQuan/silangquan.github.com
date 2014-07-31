@@ -81,7 +81,7 @@ font-size: 30px;
 }
 
 .post_content h2 {
-    font-size: 36px;
+    font-size: 26px;
     /* The bottom margin is small. It's designed to be used with gray meta text
      * below a post title. */
     margin: 24px 0 6px;
@@ -96,7 +96,7 @@ font-size: 30px;
     font-size: 18px;
 }
 .post_content a {
-    color: #58a8ec;
+    color: #507ba0;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -114,7 +114,7 @@ font-size: 30px;
     margin-left: 24px;
 }
 .post_content pre {
-    padding: 0px 24px;
+    padding: 10x;
     white-space: pre-wrap;
 }
 .post_content code {
@@ -123,17 +123,16 @@ font-size: 30px;
     font-size: 13px;
 }
 
-.read_all{
+.post_content .read_all{
   float: left;
   font-size: 14px;
-
   width: 100%;
-    border-bottom: 1px solid #E1E1E1;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #E1E1E1;
+  padding-bottom: 5px;
 }
 
 .read_all:hover{
-  color:#507ba0;
+  color:#58a8ec;
 }
 
 .post_content aside {
@@ -217,4 +216,8 @@ font-size: 30px;
 td, th {
 display: table-cell;
 vertical-align: inherit;
+}
+
+.dsq-brlink{
+  color:#fff;
 }
