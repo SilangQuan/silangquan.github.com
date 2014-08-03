@@ -1,7 +1,7 @@
 
 .post_date{
 width: 45px;
-height: auto;
+height: 85px;
 float: left;
 text-align: center;
 margin-right: 20px;
@@ -14,11 +14,16 @@ border-radius: 80px;
 -webkit-border-radius: 80px;
 padding: 10px 30px;
 color: #fff;
+
+border-top-left-radius: 80px;
+border-top-right-radius: 80px;
+border-bottom-left-radius: 80px;
+border-bottom-right-radius: 80px;
 }
 
 .post_day {
 font-size: 36px;
-margin: 5px 0 5px 0;
+margin: 3px;
 }
 .post_day, .post_year {
 display: block;

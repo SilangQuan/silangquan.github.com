@@ -1,7 +1,7 @@
 body{
   background-color: #344b5e;
   font-size:15px;
-  font-family:'WenQuanYi Micro Hei','微软雅黑','黑体','宋体'
+  font-family:'微软雅黑','黑体','宋体'
 }
 
 @font-face {
@@ -111,6 +111,7 @@ a:visited{
 }
 
 #main #misc{
+  margin-top: 10px;
   float:left;
   width:180px;
   min-height:823px;
