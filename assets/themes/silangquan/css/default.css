@@ -4,15 +4,6 @@ body{
   font-family:'微软雅黑','黑体','宋体'
 }
 
-@font-face {
-font-family:微软雅黑;
-src: url('微软雅黑.eot'); /* IE9 Compat Modes */
-src: url('微软雅黑.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-url('微软雅黑.woff') format('woff'), /* Modern Browsers */
-url('微软雅黑.ttf') format('truetype'), /* Safari, Android, iOS */
-url('微软雅黑.svg#微软雅黑') format('svg'); /* Legacy iOS */
-}
-
 * {
     margin:0;
     padding:0;
@@ -45,6 +36,11 @@ a:visited{
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   min-height:800px;
+
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
   }
 
 #header{
