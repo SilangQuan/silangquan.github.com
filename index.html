@@ -6,7 +6,7 @@ tagline: Supporting tagline
 {% include JB/setup %}
 
 
-{% for post in site.posts limit:3 %}
+{% for post in paginator.posts %}
 <div class="post">	
 		<time datetime = "{ post.date | date_to_string }" class="post_date">
 			<span class="post_month">{{post.date|date:"%B"}}</span>
@@ -32,4 +32,14 @@ tagline: Supporting tagline
 </div>
 {% endfor %} 
 
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="/page{{ paginator.previous_page }}" class="previous">&larr; Earlier Posts</a>
+  {% endif %}
+
+  <span class="page_number "> {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}" class="next">Older Posts &rarr;</a>
+  {% endif %}
+</div>
 

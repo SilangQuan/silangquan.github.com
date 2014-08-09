@@ -175,13 +175,8 @@ font-size: 30px;
   clear: both;
 }
 
-
-
-.pagination{
-  margin-top: 10px;
-}
-
 .pagination li{
+  float: left;
   list-style-type: none;
 }
 
