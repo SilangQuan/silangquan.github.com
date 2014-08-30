@@ -31,7 +31,6 @@ display: block;
 
 .post{
   margin-top: 20px;
-  margin-left: 40px;
   width: 1000px;
   float: left;
 }
@@ -72,12 +71,16 @@ display: block;
 }
 
 h1 {
-margin: 50px 0 20px;
-font-size: 30px;
+    margin: 50px 0 20px;
+    font-size: 30px;
+    color: #1f4e5e;
+    font-weight: normal;
+}
+h2{
+  color: #1f4e5e;
 }
 
 .post_content h1, h2, h3, h4 {
-    color: #111111;
     font-weight: 400;
 }
 .post_content h1, h2, h3, h4, h5, p {
@@ -186,8 +189,12 @@ font-size: 30px;
   float: left;
 }
 
-#equid_wlist{
-  margin-left: 40px;
+#entry_body{
+  float: left;
+  margin: 0 0 0 0;
+  color: #444;
+  width: 100%;
+  text-align: justify;
 }
 
 .table-striped-white tbody>tr:nth-child(2n+1)>td, .table-striped-white tbody>tr:nth-child(2n+1)>th {
@@ -220,4 +227,44 @@ vertical-align: inherit;
 
 .dsq-brlink{
   color:#fff;
+}
+
+ /*For project page*/
+.project {
+width: 100%;
+min-height: 130px;
+margin: 20px 0px;
+display: block;
+clear: both;
+}
+
+.project img {
+width: 120px;
+height: 120px;
+float: left;
+background-color: white;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #dedede;
+margin: -5px 10px 5px 0px;
+}
+
+.project .intro {
+margin: 5px 10px 5px 0px;
+width: 100%;
+}
+
+.project .intro ul {
+list-style: none;
+margin-left: 0;
+}
+
+.project .intro ul li:first-child {
+font-size: 20px;
+padding-bottom: 5px;
+margin-bottom: 10px;
+border-bottom: 1px #eee solid;
+}
+.project .intro ul li {
+line-height: 20px;
 }

@@ -101,8 +101,9 @@ border-bottom-right-radius: 20px;
 }
 
 #main #bloglist{
+  padding-left: 40px;
   float:left;
-  width:1030px;
+  width:990px;
   padding-bottom: 100px;
 }
 
