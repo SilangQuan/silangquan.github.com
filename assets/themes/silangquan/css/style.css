@@ -29,6 +29,14 @@ margin: 3px;
 display: block;
 }
 
+.post_month{
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  display: block;
+}
+
 .post{
   margin-top: 20px;
   width: 1000px;
