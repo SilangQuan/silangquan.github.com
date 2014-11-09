@@ -1,7 +1,8 @@
 body{
   background-color: #344b5e;
   font-size:15px;
-  font-family:'微软雅黑','黑体','宋体'
+  font-family:'微软雅黑','黑体','宋体';
+  line-height: 1.5;
 }
 
 * {
@@ -155,7 +156,7 @@ border-bottom-right-radius: 20px;
   clear: both;
 }
 
-#categories{
+#categories, #archievs{
   float: left;
   margin: 20px 0;
 }
@@ -169,6 +170,13 @@ border-bottom-right-radius: 20px;
   margin-left: 20px;
   margin-top: 5px;
   font-size: 16px;
+}
+
+#archievs li {
+margin-left: 20px;
+margin-top: 5px;
+font-size: 16px;
+list-style-type: disc;
 }
 
 .post_detail .pagination{

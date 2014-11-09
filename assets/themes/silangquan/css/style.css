@@ -22,14 +22,22 @@ border-bottom-right-radius: 80px;
 }
 
 .post_day {
+padding-top: -5px;
 font-size: 36px;
-margin: 3px;
+height: 43px;
 }
 .post_day, .post_year {
 display: block;
+float: left;
+width: 100%;
 }
 
+.post_year {
+    font-size: 12px;
+  }
+
 .post_month{
+  height: 10px;
   margin-top: 10px;
   float: left;
   width: 100%;
@@ -84,9 +92,6 @@ h1 {
     color: #1f4e5e;
     font-weight: normal;
 }
-h2{
-  color: #1f4e5e;
-}
 
 .post_content h1, h2, h3, h4 {
     font-weight: 400;
@@ -96,11 +101,23 @@ h2{
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+font-weight: normal;
+font-variant: normal;
+white-space: normal;
+color:#898989;;
+}
+
+h1{
+color:#1f4e5e;
+}
+
 .post_content h2 {
     font-size: 26px;
     /* The bottom margin is small. It's designed to be used with gray meta text
      * below a post title. */
     margin: 24px 0 6px;
+    color: #1f4e5e;
 }
 .post_content h3 {
     font-size: 24px;
